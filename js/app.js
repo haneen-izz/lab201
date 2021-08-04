@@ -99,24 +99,27 @@ switch (pets) {
  }
 }
 function Q6(){
-let number 
-  for(let i = 0; i < 4 ; i++){
-    Number(prompt("guess how many pets do i have? "))
-    if(number == 5){
-        alert("yes right " + number)
-        score++;
-        break; 
+  for(let i = 1; i <= 4 ; i++){
+    let number = Number(prompt("guess how many pets do i have? "))
+    if(number > 5){
+        alert("too high " + number)
+  
     }
   
- else if(number > 5)
-    alert("too high " + number)
+ else if(number < 5){
+    alert("too low " + number)
+ }
   
- else if(number < 5)
-      alert("too low " + number)
+ else if(number == 5){
+     
+      alert("yes right " + number)
+      score++;
+      break; 
 }
-    
-    if(number != 5)
-    alert("the answer is 5");
+if(i === 4){
+    alert("the right answer is 5")
+  }
+}
 }
 
       let movie
@@ -164,7 +167,4 @@ let number
       Q7();
 alert("the score is : " + score + "out of 7");
 alert("thanks for using my website" +" "+ name)
- 
-
-
- 
+    
