@@ -2,7 +2,6 @@
 let name = prompt("what's your name?").toLowerCase();
  
 alert("welcome to my website" +" "+ name)
- 
 let score = 0;
 let education = prompt("do you think that i like information technology field?  yes or no ").toLowerCase();
 
@@ -21,8 +20,9 @@ let education = prompt("do you think that i like information technology field?  
             break;
             default:
             alert("please answer yes or no ");
-     
     }
+    
+
     
 
 let travel = prompt("am i a good swimmer?  yes or no").toLowerCase();
