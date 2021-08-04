@@ -3,8 +3,9 @@ let name = prompt("what's your name?").toLowerCase();
  
 alert("welcome to my website" +" "+ name)
 let score = 0;
-let education = prompt("do you think that i like information technology field?  yes or no ").toLowerCase();
-
+// let education = prompt("do you think that i like information technology field?  yes or no ").toLowerCase();
+ function Q1(){
+ let education = prompt("do you think that i like information technology field?  yes or no ").toLowerCase();
     switch (education ) {
         case 'yes':
             case 'y':
@@ -21,10 +22,11 @@ let education = prompt("do you think that i like information technology field?  
             default:
             alert("please answer yes or no ");
     }
-    
+}
+
 
     
-
+function Q2 (){
 let travel = prompt("am i a good swimmer?  yes or no").toLowerCase();
 switch (travel) {
     case 'yes':
@@ -40,7 +42,8 @@ switch (travel) {
     default:
     alert("please answer yes or no ");
 }
-
+}
+function Q3 (){
 let work = prompt("do you that i like work under pressure?  yes or no ").toLowerCase();
 switch (work) {
         case 'yes':
@@ -57,7 +60,8 @@ switch (work) {
         alert("please answer yes or no ");
      
     }
- 
+}
+function Q4(){
 let language = prompt ("do you think that i like korean language?  yes or no").toLowerCase();
 switch (language) {
     case 'yes':
@@ -74,7 +78,8 @@ switch (language) {
         alert("please answer yes or no ");
      
     }
-
+}
+function Q5(){
 let pets = prompt("do you think that i have allergic from cats?  yes or no").toLowerCase();
 switch (pets) {
     case 'yes':
@@ -91,7 +96,9 @@ switch (pets) {
         alert("please answer yes or no ");
 
        
+ }
 }
+function Q6(){
 let number 
   for(let i = 0; i < 4 ; i++){
     Number(prompt("guess how many pets do i have? "))
@@ -106,14 +113,14 @@ let number
   
  else if(number < 5)
       alert("too low " + number)
-   }
-
+}
     
     if(number != 5)
     alert("the answer is 5");
-      
+}
 
       let movie
+      function Q7(){
       let bestMovies = ['Parasite' ,'Train to Busan' ,'Burning' ,'The Host' ,'A Taxi Driver','Train to Busan','The Call'];
         
          
@@ -144,10 +151,20 @@ let number
         alert("thats not right");
          
         }
-    }
-        
-alert("the correct answers are: 'Parasite' ,'Train to Busan' ,'Burning' ,'The Host' ,'A Taxi Driver','Train to Busan','The Call' ")
+        }
+  
+     alert("the correct answers are: 'Parasite' ,'Train to Busan' ,'Burning' ,'The Host' ,'A Taxi Driver','Train to Busan','The Call' ")
+      }
+      Q1();
+      Q2();
+      Q3();
+      Q4();
+      Q5();
+      Q6();
+      Q7();
 alert("the score is : " + score + "out of 7");
 alert("thanks for using my website" +" "+ name)
  
+
+
  
